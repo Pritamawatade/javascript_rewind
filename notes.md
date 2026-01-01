@@ -29,4 +29,11 @@
 
 * Global execution context runs inside call stack
 
+## Promises
+* Promise is way to tell that i can't get the data immegetaly but i will promise you that i will get the data later.
+* Any async function or fetch returned promise by default.
+* Promise has 3 methods .then .catch .finally
+* Promise has 3 states pending, fulfilled, rejected, (settled only communication purpose)
+* in custom promise resolve function calls the .then method and reject method calls the .catch method   
 * callback function is function which is passed as parameter to another function
+
