@@ -47,3 +47,5 @@ let arr = []
 arr.__proto__
 
 ```
+
+* ?? nullish cohetion

@@ -4,10 +4,10 @@ Array.prototype.foreach = function (fn) {
     }
 }
 
-if(!Array.prototype.mymap){
-    Array.prototype.mymap = function(fn){
+if (!Array.prototype.mymap) {
+    Array.prototype.mymap = function (fn) {
         let res = []
-        for(let i = 0; i<this.length; i++){
+        for (let i = 0; i < this.length; i++) {
             const result = fn(this[i], i)
             res.push(result)
         }
@@ -16,9 +16,40 @@ if(!Array.prototype.mymap){
     }
 }
 
+if (!Array.prototype.myreduce) {
+    Array.prototype.myreduce = function (fun, intialvalue) {
+        let acc = intialvalue === undefined ? this[0] : intialvalue;
+        let startIndex = intialvalue === undefined ? 1 : 0;
+
+        for (let i = startIndex; i < this.length; i++) {
+            acc = fun(acc, this[i])
+        }
+
+        return acc;
+
+    }
+}
+
 arr = [1, 2, 3, 4, 5]
 // let demo = arr.foreach((el, i)=> el*2)
 
-let demo = arr.mymap((el, i) => el * 2)
+// let demo = arr.mymap((el, i) => el * 2)
+
+let demo = arr.reduce((acc, intialvalue) => {
+    console.log(`acc = ${acc}\n intialvalue = ${intialvalue}`);
+    console.log("--------------------------------------");
+
+    return acc + intialvalue
+
+});
+
+console.log(demo);
+demo = arr.myreduce((acc, intialvalue) => {
+    console.log(`acc = ${acc}\n intialvalue = ${intialvalue}`);
+    console.log("--------------------------------------");
+
+    return acc + intialvalue
+
+});
 console.log(demo);
 
