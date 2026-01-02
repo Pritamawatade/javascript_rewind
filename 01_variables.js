@@ -41,4 +41,3 @@ let st = "Hello world"
 console.log(st.indexOf("w"))
 console.log(st.toUpperCase())
 console.log(st.slice(0,5))
-

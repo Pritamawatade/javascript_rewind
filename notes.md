@@ -37,3 +37,13 @@
 * in custom promise resolve function calls the .then method and reject method calls the .catch method   
 * callback function is function which is passed as parameter to another function
 
+## Polyfills
+* Customised versions of built in javascript features is called polyfills, which is used to give access of latest features to old browsers.
+* The base call has the propertie called prototype and object of that call has the __ proto__ property. 
+```
+for eg:
+Array.prototype 
+let arr = []
+arr.__proto__
+
+```
