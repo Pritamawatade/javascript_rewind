@@ -30,7 +30,7 @@ if (!Array.prototype.myreduce) {
     }
 }
 
-arr = [1, 2, 3, 4, 5]
+arr = [1]
 // let demo = arr.foreach((el, i)=> el*2)
 
 // let demo = arr.mymap((el, i) => el * 2)
@@ -53,3 +53,4 @@ demo = arr.myreduce((acc, intialvalue) => {
 });
 console.log(demo);
 
+function demo(){}
