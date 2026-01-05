@@ -6,13 +6,13 @@ function debounce(fn, delay){
     }
 }
 
-const greet = (hitesh)=>{
-    console.log("Hello "+ hitesh);
+const greet = (name)=>{
+    console.log("Hello "+ name);
 }
-const betterGreet = debounce(greet, 2000)
+const fun = debounce(greet, 2000)
 
-betterGreet("Hitesh")
-betterGreet("Hitesh")
-betterGreet("Hitesh")
-betterGreet("Hitesh")
-betterGreet("Hitesh")
+fun("Pritam")
+fun("Pritam")
+fun("Pritam")
+fun("Pritam")
+fun("Pritam")

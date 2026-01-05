@@ -7,7 +7,7 @@
 - JS call stack:
     JS call stack is a stack which javascript uses behind the scene to execute the javascript code.
 
-    JS call stack is imepatiend and it waits for nothing, if it encounter a setTimeout method or something, That code goes into the callBack queue queue.
+    JS call stack is imepatiend and it waits for nothing, if it encounter a setTimeout method or something, That code goes into the callBack queue.
 
 - Callback queue or Task queue:
     Callback queue is maintained to store the callbackes like setTimeout. 
@@ -19,7 +19,7 @@
     Event loop is the process which continusly looks for weather or not code exits in the callback queue and if exists and it's ready top executed, it puts the code in JS call stack, It only puts the code in stack if the call stack is empty .
 
 - Starvation:
-    It means our Micro Task queue put's one after another code in micro tast queue, means once the promise is resolved another promise is thrown into micro task queue, if that resolve then another promise, this situvation lead to starvation because in this situvation Task queue's code will never be executed.
+    It means our Micro Task queue put's one after another code in call stack, means once the promise is resolved another promise is thrown into micro task queue, if that resolve then another promise, this situvation lead to starvation because in this situvation Task queue's code will never be executed.
 
 - hoisting:
     It referece to the process where it apperars that intepeter moves the variables declaration at top of the file. 
@@ -49,3 +49,8 @@ arr.__proto__
 ```
 
 * ?? nullish cohetion
+* we don't have `this` in arrow function
+
+## Lexical scoping and closure
+
+* We have GEC and FEC (Function execution context)
