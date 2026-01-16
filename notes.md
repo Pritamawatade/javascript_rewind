@@ -54,3 +54,12 @@ arr.__proto__
 ## Lexical scoping and closure
 
 * We have GEC and FEC (Function execution context)
+
+## prototype inheritance
+- so first of if we try to access any properties of object first it looks for in its own object scope in curly braces, if that 
+    property finds in that scope then it is accessed, if not then JS looks for for that property in __proto__.
+- we can inherit object by assigning __proto__ to a object. __proto__ = p2.
+- if we do that we are able to access all the properties of p2.
+- __proto__ points to the object p2. if we create a string then the __proto__ points to the String class and the __proto__ of String class points the Object class. 
+- In JS eventually everything is object. so every proto points to Object or null.
+
