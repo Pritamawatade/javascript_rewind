@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Based Form</title>
+    <style>
+        body {
+            display: grid;
+            min-height: 100vh;
+            place-items: center;
+            margin: 0;
+            background: #f2f7f3;
+            color: #183022;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: min(90%, 360px);
+            padding: 2rem;
+            background: white;
+            border: 1px solid #d6e3d8;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgb(24 48 34 / 10%);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.7rem;
+            border: 1px solid #aebdb2;
+            border-radius: 4px;
+            font: inherit;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            border: 0;
+            border-radius: 4px;
+            color: white;
+            font: inheritz;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            cursor: not-allowed;
+            opacity: 0.8;
+        }
+
+        #status {
+            min-height: 1.5em;
+            margin: 1rem 0 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="timeForm">
+        <h1>Submit Form</h1>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+        <button id="submitButton" type="submit">Submit</button>
+        <p id="status" aria-live="polite"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

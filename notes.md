@@ -63,28 +63,6 @@ arr.__proto__
 - __proto__ points to the object p2. if we create a string then the __proto__ points to the String class and the __proto__ of String class points the Object class. 
 - In JS eventually everything is object. so every proto points to Object or null.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Deployment section
 
 * reverse proxy : A reverse proxy is a server that sits in front of web servers and forwards client requests to those web servers. suppose you have multiple web servers / express projects running in single machine/VPS then resverse proxy is the one who routes the request to the correct server. (nginx) and caddy is also a reverse proxy.
